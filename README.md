@@ -1,8 +1,8 @@
 # TaskTrack Android Mobile Application Project Outline
-Prepared by Devon Moore
-Course: Mobile Application Development COM-437-OL01
-Instructor: Dr. Marwan Omar
-Date: August 31, 2026
+### Prepared by Devon Moore
+### Course: Mobile Application Development COM-437-OL01
+### Instructor: Dr. Marwan Omar
+### Date: August 31, 2026
 
 ## Purpose: This outline describes the Android application I plan to design and develop during the term. The project is called TaskTrack, a mobile assignment and deadline tracker intended to help students keep schoolwork organized in one place. The outline explains the problem the app addresses, the planned platform and technology, expected functions, and the initial screen design.
 
@@ -47,44 +47,49 @@ Android notification support will be used for assignment reminders. If time allo
 
 ## VI. Design and Wireframes
 The interface is intended to be simple enough to use quickly between classes. The wireframes below show the basic organization of the most important screens. These are early designs and may change slightly as the application is developed and tested.
-Wireframe 1 - Dashboard
-TASKTRACK
-Today | Upcoming | Completed
-Next Due: Database Quiz - Sep. 3
-Web Design Project - Sep. 5
-Android Outline - Sep. 7
-[ + ADD ASSIGNMENT ]
-Home     Courses     Assignments
 
-Wireframe 2 - Add Assignment
-ADD ASSIGNMENT
-Assignment Title: __________________
-Course: [ Select Course ▼ ]
-Due Date: [ MM / DD / YYYY ]
-Priority: [ Low ] [ Medium ] [ High ]
-Notes: _____________________________
-[ SAVE ASSIGNMENT ]
-[ CANCEL ]
+## Wireframe 1 - Dashboard
+### TASKTRACK
+### Today | Upcoming | Completed
+### Next Due: Database Quiz - Sep. 3
+### Web Design Project - Sep. 5
+### Android Outline - Sep. 7
+### [ + ADD ASSIGNMENT ]
+### Home     Courses     Assignments
 
-Wireframe 3 - Assignment List
-ASSIGNMENTS
-[ Search assignments... ]
-☐ Android Project      Sep. 7   HIGH
-☐ Database Quiz        Sep. 3   MED
-☑ Chapter Questions    Aug. 30  DONE
-[ Filter ▼ ]   [ Sort by Due Date ▼ ]
-[ + ADD ]
-Home     Courses     Assignments
 
-Wireframe 4 - Assignment Details
-ASSIGNMENT DETAILS
-Android Project Outline
-Course: Mobile App Development
-Due: Sep. 7
-Priority: High
-Notes: Finish outline and GitHub README.
-[ MARK COMPLETE ]
-[ EDIT ]      [ DELETE ]
+## Wireframe 2 - Add Assignment
+### ADD ASSIGNMENT
+### Assignment Title: __________________
+### Course: [ Select Course ▼ ]
+### Due Date: [ MM / DD / YYYY ]
+### Priority: [ Low ] [ Medium ] [ High ]
+### Notes: _____________________________
+### [ SAVE ASSIGNMENT ]
+### [ CANCEL ]
+
+
+## Wireframe 3 - Assignment List
+### ASSIGNMENTS
+### [ Search assignments... ]
+### ☐ Android Project      Sep. 7   HIGH
+### ☐ Database Quiz        Sep. 3   MED
+### ☑ Chapter Questions    Aug. 30  DONE
+### [ Filter ▼ ]   [ Sort by Due Date ▼ ]
+### [ + ADD ]
+### Home     Courses     Assignments
+
+
+## Wireframe 4 - Assignment Details
+### ASSIGNMENT DETAILS
+### Android Project Outline
+### Course: Mobile App Development
+### Due: Sep. 7
+### Priority: High
+### Notes: Finish outline and GitHub README.
+### [ MARK COMPLETE ]
+### [ EDIT ]      [ DELETE ]
+
 
 ## VII. Basic Data Design
 TaskTrack will use two main data groups: Course and Assignment. A course can have many assignments, while each assignment will belong to one course. Keeping the data separated this way will make it easier to update a course without repeating the same information for every assignment.
@@ -99,6 +104,7 @@ Assignment	assignmentId, courseId, title, dueDate, priority, notes, completed	St
 5.	Test required-field validation and common user actions.
 6.	Test the final application on an actual Android mobile device.
 7.	Correct usability or layout problems found during testing.
-GitHub Repository/README Link: ____________________________________________________________
-GitHub Wiki Link: ____________________________________________________________________
-Before submission, I will replace the blank lines above with the public or instructor-accessible links to the README and Wiki pages used for the project.
+
+GitHub Repository/README Link: 
+
+GitHub Wiki Link: 
