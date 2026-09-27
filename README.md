@@ -1,13 +1,13 @@
-# TaskTrack Android Mobile Application Project Outline
+# PlanPilot Android Mobile Application Project Outline
 ### Prepared by Devon Moore
 ### Course: Mobile Application Development COM-437-OL01
 ### Instructor: Dr. Marwan Omar
 ### Date: August 31, 2026
 
-## Purpose: This outline describes the Android application I plan to design and develop during the term. The project is called TaskTrack, a mobile assignment and deadline tracker intended to help students keep schoolwork organized in one place. The outline explains the problem the app addresses, the planned platform and technology, expected functions, and the initial screen design.
+## Purpose: This outline describes the Android application I plan to design and develop during the term. The project is called PlanPilot, a mobile assignment and deadline tracker intended to help students keep schoolwork organized in one place. The outline explains the problem the app addresses, the planned platform and technology, expected functions, and the initial screen design.
 
 ## I. Project Description
-•	Application name: TaskTrack
+•	Application name: PlanPilot
 •	Application type: Student productivity and assignment-tracking application
 •	Primary users: College and high-school students who need a simple way to organize coursework and deadlines.
 •	Main idea: TaskTrack will let a student enter classes and assignments, assign due dates and priorities, mark work as complete, and view upcoming deadlines from a simple dashboard.
@@ -30,7 +30,7 @@ TaskTrack addresses this problem by giving the user one organized location for s
 The front end will be the part of TaskTrack that the user sees and interacts with. It will be built in Android Studio using Kotlin and XML layouts. The interface will focus on a clean layout with clear buttons, readable text, and simple navigation. The main screens will include a dashboard, assignment list, add/edit assignment form, course list, and assignment details.
 
 ### B. Back End
-The first version of TaskTrack will use a local Room database, which provides an Android-friendly way to store structured data on the device. The database will hold course and assignment information such as title, course, due date, priority, notes, and completion status. A local database is a good fit for this project because the basic app can work without requiring the user to create an online account.
+The first version of PlanPilot will use a local Room database, which provides an Android-friendly way to store structured data on the device. The database will hold course and assignment information such as title, course, due date, priority, notes, and completion status. A local database is a good fit for this project because the basic app can work without requiring the user to create an online account.
 Android notification support will be used for assignment reminders. If time allows later in the term, a cloud backup or sign-in feature could be explored as an enhancement, but it is not required for the first working version.
 
 ## V. Planned Functionality
@@ -49,7 +49,7 @@ Android notification support will be used for assignment reminders. If time allo
 The interface is intended to be simple enough to use quickly between classes. The wireframes below show the basic organization of the most important screens. These are early designs and may change slightly as the application is developed and tested.
 
 ## Wireframe 1 - Dashboard
-### TASKTRACK
+### PLANPILOT
 ### Today | Upcoming | Completed
 ### Next Due: Database Quiz - Sep. 3
 ### Web Design Project - Sep. 5
@@ -92,7 +92,7 @@ The interface is intended to be simple enough to use quickly between classes. Th
 
 
 ## VII. Basic Data Design
-TaskTrack will use two main data groups: Course and Assignment. A course can have many assignments, while each assignment will belong to one course. Keeping the data separated this way will make it easier to update a course without repeating the same information for every assignment.
+PlanPilot will use two main data groups: Course and Assignment. A course can have many assignments, while each assignment will belong to one course. Keeping the data separated this way will make it easier to update a course without repeating the same information for every assignment.
 Entity	Sample Fields	Purpose
 Course	courseId, courseName, instructor, colorLabel	Stores the classes the student is taking.
 Assignment	assignmentId, courseId, title, dueDate, priority, notes, completed	Stores individual tasks and links each one to a course.
