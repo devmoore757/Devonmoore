@@ -2,7 +2,7 @@
 ### Prepared by Devon Moore
 ### Course: Mobile Application Development COM-437-OL01
 ### Instructor: Dr. Marwan Omar
-### Date: August 31, 2026
+### Date: September 27, 2026
 
 ## Purpose: This outline describes the Android application I plan to design and develop during the term. The project is called PlanPilot, a mobile assignment and deadline tracker intended to help students keep schoolwork organized in one place. The outline explains the problem the app addresses, the planned platform and technology, expected functions, and the initial screen design.
 
