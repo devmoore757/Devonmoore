@@ -4,8 +4,6 @@
 ### Instructor: Dr. Marwan Omar
 ### Date: October 18, 2026
 
-# PlanPilot | Mobile Application Outline
-
 Mobile Application Development — Project Concept and Design Specification
 
 ## 1. Project Description
