@@ -4,107 +4,141 @@
 ### Instructor: Dr. Marwan Omar
 ### Date: October 18, 2026
 
-## Purpose: This outline describes the Android application I plan to design and develop during the term. The project is called PlanPilot, a mobile assignment and deadline tracker intended to help students keep schoolwork organized in one place. The outline explains the problem the app addresses, the planned platform and technology, expected functions, and the initial screen design.
+# PlanPilot | Mobile Application Outline
 
-## I. Project Description
-•	Application name: PlanPilot
-•	Application type: Student productivity and assignment-tracking application
-•	Primary users: College and high-school students who need a simple way to organize coursework and deadlines.
-•	Main idea: TaskTrack will let a student enter classes and assignments, assign due dates and priorities, mark work as complete, and view upcoming deadlines from a simple dashboard.
-•	Project goal: The goal is to create a useful Android app that demonstrates mobile interface design, user input, local data storage, navigation, validation, and device notifications.
+Mobile Application Development — Project Concept and Design Specification
 
-## II. Problem Being Addressed
-Students often receive deadlines from several places, including course websites, email, syllabi, and classroom announcements. When assignments are spread across different systems, it is easy to forget a due date or lose track of what should be completed first. A general calendar can help, but it does not always provide a clear school-focused view of courses, assignments, priorities, and completion status.
-TaskTrack addresses this problem by giving the user one organized location for school assignments. Instead of trying to remember every deadline, the user can enter the assignment once and check the app for upcoming work. The app will also make it easier to identify overdue items and assignments that are due soon.
+## 1. Project Description
 
-## III. Platform
-•	Operating system: Android
-•	Development environment: Android Studio
-•	Programming language: Kotlin
-•	User interface: XML-based Android layouts and standard Material-style controls
-•	Target device: Android smartphone; the final version will be demonstrated on a real mobile device
-•	Version control: Git and GitHub will be used to store source code and project documentation
+**Purpose:** PlanPilot is an Android student productivity application designed to organize courses, assignments, and deadlines in one convenient location.
 
-## IV. Front-End and Back-End Support
-### A. Front End
-The front end will be the part of TaskTrack that the user sees and interacts with. It will be built in Android Studio using Kotlin and XML layouts. The interface will focus on a clean layout with clear buttons, readable text, and simple navigation. The main screens will include a dashboard, assignment list, add/edit assignment form, course list, and assignment details.
+**Audience:** High-school and college students managing coursework across multiple classes.
 
-### B. Back End
-The first version of PlanPilot will use a local Room database, which provides an Android-friendly way to store structured data on the device. The database will hold course and assignment information such as title, course, due date, priority, notes, and completion status. A local database is a good fit for this project because the basic app can work without requiring the user to create an online account.
-Android notification support will be used for assignment reminders. If time allows later in the term, a cloud backup or sign-in feature could be explored as an enhancement, but it is not required for the first working version.
+**Platform:** Android smartphones; planned development in Android Studio using Kotlin and XML layouts.
 
-## V. Planned Functionality
-•	Add, edit, and delete courses.
-•	Add, edit, and delete assignments.
-•	Enter an assignment title, course, due date, priority level, and optional notes.
-•	View assignments in a list and sort or group them by due date.
-•	Display upcoming assignments on a dashboard.
-•	Clearly identify overdue assignments.
-•	Mark an assignment as completed and separate completed work from active work.
-•	Validate required fields so an assignment cannot be saved without basic information.
-•	Use local storage so information remains available after the app is closed.
-•	Provide reminder notifications for upcoming assignments.
+**Goal:** Offer a straightforward dashboard for tracking upcoming work, priorities, and completion status.
 
-## VI. Design and Wireframes
-The interface is intended to be simple enough to use quickly between classes. The wireframes below show the basic organization of the most important screens. These are early designs and may change slightly as the application is developed and tested.
+## 2. Problem Addressing
 
-## Wireframe 1 - Dashboard
-### PLANPILOT
-### Today | Upcoming | Completed
-### Next Due: Database Quiz - Sep. 3
-### Web Design Project - Sep. 5
-### Android Outline - Sep. 7
-### [ + ADD ASSIGNMENT ]
-### Home     Courses     Assignments
+**Challenge:** Students receive assignments and due dates through learning platforms, emails, syllabi, and classroom announcements. This scattered information makes it difficult to identify what needs attention first.
 
+**Solution:** PlanPilot consolidates assignment details into a school-focused dashboard with due-date ordering, overdue indicators, priority labels, and reminders.
 
-## Wireframe 2 - Add Assignment
-### ADD ASSIGNMENT
-### Assignment Title: __________________
-### Course: [ Select Course ▼ ]
-### Due Date: [ MM / DD / YYYY ]
-### Priority: [ Low ] [ Medium ] [ High ]
-### Notes: _____________________________
-### [ SAVE ASSIGNMENT ]
-### [ CANCEL ]
+**Expected benefit:** Students can check one app instead of searching multiple sources, helping them plan study time and reduce missed deadlines.
 
+## 3. Front/Back End Support
 
-## Wireframe 3 - Assignment List
-### ASSIGNMENTS
-### [ Search assignments... ]
-### ☐ Android Project      Sep. 7   HIGH
-### ☐ Database Quiz        Sep. 3   MED
-### ☑ Chapter Questions    Aug. 30  DONE
-### [ Filter ▼ ]   [ Sort by Due Date ▼ ]
-### [ + ADD ]
-### Home     Courses     Assignments
+**Front end:** Kotlin-driven Android screens using XML layouts and familiar Material-style interface controls. Planned screens include Dashboard, Courses, Assignments, Add/Edit Assignment, and Assignment Details.
 
+**Back end:** A local Room database is planned to persist courses and assignments on the device. Course records include course ID and name; assignment records include ID, course ID, title, due date, priority, notes, and completion status.
 
-## Wireframe 4 - Assignment Details
-### ASSIGNMENT DETAILS
-### Android Project Outline
-### Course: Mobile App Development
-### Due: Sep. 7
-### Priority: High
-### Notes: Finish outline and GitHub README.
-### [ MARK COMPLETE ]
-### [ EDIT ]      [ DELETE ]
+**Notifications and connectivity:** Android notifications are planned for deadline reminders. The core app is designed to work offline without requiring an account; cloud backup or sign-in would be a later enhancement.
 
+## 4. Functionality
 
-## VII. Basic Data Design
-PlanPilot will use two main data groups: Course and Assignment. A course can have many assignments, while each assignment will belong to one course. Keeping the data separated this way will make it easier to update a course without repeating the same information for every assignment.
-Entity	Sample Fields	Purpose
-Course	courseId, courseName, instructor, colorLabel	Stores the classes the student is taking.
-Assignment	assignmentId, courseId, title, dueDate, priority, notes, completed	Stores individual tasks and links each one to a course.
-## VIII. Development and Testing Goals
-1.	Create the basic project and navigation structure in Android Studio.
-2.	Build the main screens shown in the wireframes.
-3.	Create the Room database and connect the forms to stored data.
-4.	Add assignment completion, sorting, and reminder features.
-5.	Test required-field validation and common user actions.
-6.	Test the final application on an actual Android mobile device.
-7.	Correct usability or layout problems found during testing.
+**Course management:** Add, edit, and delete courses.
 
-GitHub Repository/README Link: 
+**Assignment management:** Create, view, edit, and delete assignments with title, linked course, due date, priority, and optional notes.
 
-GitHub Wiki Link: 
+**Tracking:** Sort by due date, identify overdue and upcoming tasks, and mark assignments complete.
+
+**Validation and storage:** Require essential fields before saving and retain entries in local storage.
+
+**Reminders:** Provide notifications ahead of assignment due dates, subject to implementation and testing.
+
+## 5. Design (Wireframes)
+
+**Design approach:** The app uses simple navigation, readable cards, clear due-date labels, and a prominent Add Assignment action. The following wireframes are conceptual rather than screenshots of a completed app.
+
+### Wireframe A — Dashboard
+
+```text
+
+┌─────────────────────────────────┐
+
+│ PLANPILOT       Today | Upcoming │
+
+│ Due soon                         │
+
+│ Database Quiz       Sep 3  HIGH │
+
+│ Web Design Project  Sep 5   MED │
+
+│ Android Outline     Sep 7   LOW │
+
+│       + ADD ASSIGNMENT          │
+
+│ Home       Courses     Tasks     │
+
+└─────────────────────────────────┘
+
+```
+
+### Wireframe B — Add Assignment
+
+```text
+
+┌─────────────────────────────────┐
+
+│ ADD ASSIGNMENT                  │
+
+│ Title: _______________________  │
+
+│ Course: [ Select course   ▼ ]   │
+
+│ Due date: [ MM / DD / YYYY ]    │
+
+│ Priority: Low | Medium | High   │
+
+│ Notes: ______________________   │
+
+│         SAVE ASSIGNMENT         │
+
+└─────────────────────────────────┘
+
+```
+
+### Wireframe C — Assignment List
+
+```text
+
+┌─────────────────────────────────┐
+
+│ ASSIGNMENTS     [Search...]     │
+
+│ ☐ Database Quiz       Sep 3     │
+
+│ ☐ Android Project     Sep 7     │
+
+│ ☑ Chapter Questions   DONE      │
+
+│ Filter ▼       Sort: Due date ▼ │
+
+│ Home       Courses     Tasks     │
+
+└─────────────────────────────────┘
+
+```
+
+### Wireframe D — Assignment Details
+
+```text
+
+┌─────────────────────────────────┐
+
+│ ASSIGNMENT DETAILS              │
+
+│ Android Project Outline         │
+
+│ Mobile App Development          │
+
+│ Due Sep 7     Priority: High    │
+
+│ Finish outline and README       │
+
+│       MARK COMPLETE             │
+
+│          EDIT  | DELETE         │
+
+└─────────────────────────────────┘
+
